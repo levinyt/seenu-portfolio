@@ -1,5 +1,8 @@
 import RevealOnScroll from "../RevealOnScroll";
+import projectLinks from "../../../public/Project_links";
 const Projects = () => {
+    const projectName= "currency_converter";
+    const projectUrl=projectLinks[projectName]
     return ( 
     <section id="projects"
     className="min-h-screen flex items-center justify-center py-20"
@@ -22,7 +25,7 @@ const Projects = () => {
                     </p>
                     <div>
                         {["React", "Tailwind CSS", "API Integration"].map((tech, key) => (
-                            <span className="bg-blufe-500/10 text-blue-500 px-3 py-1 rounded-full text-sm hover:bg-blue-500/20
+                            <span className="bg-blue-500/10 text-blue-500 px-3 py-1 rounded-full text-sm hover:bg-blue-500/20
                                     hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition" key={key}>
                                         {tech}
 
@@ -30,8 +33,11 @@ const Projects = () => {
                             
                         ))}
                     </div>
-                    <div className="fles justify-between items-center">
-                        <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors">View Projects -›</a>
+                    <div className="flex justify-between items-center">
+                        <a href={projectUrl}
+                         className="text-blue-400 hover:text-blue-300 transition-colors"
+                         target="_blank"
+                         rel="noopener noreferrer">View Projects -›</a>
                     </div>
                 </div>
             </div>
