@@ -7,6 +7,7 @@ import Home from './Components/sections/Home'
 import About from './Components/sections/About'
 import Projects from './Components/sections/Projects'
 import Contact from './Components/sections/Contact'
+import Footer from './Components/Footer'
 import "./index.css"
 
 
@@ -26,6 +27,7 @@ function App() {
         <About/>
         <Projects/>
         <Contact/>
+        <Footer/>
 
         
 
